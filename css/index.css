@@ -1,0 +1,90 @@
+/* Estilizando o Header */
+header {
+    display: flex;
+    background-color: #DCDC28;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 10px solid #000000;
+}
+
+/* Estilizando a Imagem do Perfil */
+.profile-image {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+/* Estilizando a Navbar */
+nav {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+    gap: 20px;
+    height: 60px; /* Mantém a mesma altura do botão */
+}
+
+/* Ajusta a altura e espaçamento dos links */
+nav a {
+    color: #000;
+    font-size: 18px;
+    font-family: "Fira Code", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 18px 15px; /* Aumenta o padding superior e inferior */
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    display: flex;
+    align-items: center; /* Mantém os textos alinhados */
+    height: 100%; /* Garante alinhamento correto */
+}
+
+/* Criando bullets mais quadrados antes dos links */
+nav a::before {
+    content: ""; /* Sem conteúdo textual */
+    display: inline-block;
+    width: 8px;  /* Largura do quadrado */
+    height: 8px; /* Altura do quadrado */
+    background-color: #000; /* Cor do bullet */
+    margin-right: 10px; /* Espaço entre o bullet e o texto */
+    vertical-align: middle;
+}
+  
+/* Efeito ao passar o mouse */
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+/* Ajusta o botão Download CV */
+#download_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--usa-esse, #3c3b3b);
+    color: #fff;
+    box-shadow: 5px 5px 0px 0px #000;
+    width: 170px;
+    height: 60px; /* Mantém a altura fixa */
+    flex-shrink: 0;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    padding: 0; /* Evita qualquer desalinhamento */
+}
+
+/* Adicionando efeito hover */
+#download_button:hover {
+    background: #333; /* Um cinza escuro ao passar o mouse */
+    box-shadow: 5px 5px 0px 0px #222;
+    transform: scale(1.05);
+}
+
+#download_button::before {
+    content: none;
+}
