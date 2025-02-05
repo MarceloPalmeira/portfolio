@@ -57,7 +57,7 @@ nav a::before {
 /* Efeito ao passar o mouse */
 nav a:hover {
     background-color: rgba(0, 0, 0, 0.1);
-    transform: scale(1.05);
+    transform: scale(1.10);
 }
 
 /* Ajusta o botão Download CV */
@@ -82,7 +82,7 @@ nav a:hover {
 #download_button:hover {
     background: #333; /* Um cinza escuro ao passar o mouse */
     box-shadow: 5px 5px 0px 0px #222;
-    transform: scale(1.05);
+    transform: scale(1.10);
 }
 
 #download_button::before {
